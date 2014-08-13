@@ -8,4 +8,4 @@
   (let [pred (fn [book] (utils/substr (:author book) author))]
     (filter pred books)))
 
-(println (filter-books books/books "o"))
+(println (filter-books books/books "Dost"))

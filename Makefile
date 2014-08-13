@@ -1,14 +1,20 @@
 
 
-
 all:
-	make watch & make serve & make build & make open
+	make open
+	foreman start
+
+install_deps:
+	lein deps
+	gem install foreman
+	npm install -g http-server grunt-cli
+	npm install
 
 watch:
 	grunt watch
 
 serve:
-	http-server
+	http-server -p 8080
 
 open:
 	open http://localhost:8080
