@@ -1,8 +1,7 @@
 
 
 all:
-	make open
-	foreman start
+	make open & foreman start
 
 install_deps:
 	lein deps
@@ -17,6 +16,7 @@ serve:
 	http-server -p 8080
 
 open:
+	sleep 3
 	open http://localhost:8080
 
 build:
