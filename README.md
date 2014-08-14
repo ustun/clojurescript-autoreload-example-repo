@@ -3,10 +3,12 @@ clojurescript-autoreload-example-repo
 
 a sample repo demonstrating autobuild and autoreload for clojurescript using grunt-contrib-watch
 
-Install deps:
-  make install_deps
+First install dependencies:
 
-Run app:
-  make all
+    make install_deps
 
-Open Developer Tools console, make changes to books.clj and observe that autoreloading works.
+Then run the app:
+  
+    make all
+
+Open Developer Tools console, make changes to `books.clj` and observe that autoreloading works.
